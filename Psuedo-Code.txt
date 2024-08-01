@@ -1,0 +1,29 @@
+Pseudocode
+Step 1. Download and Unzip File:
+
+Define a function download_and_unzip with parameters url and output_filename.
+Send a GET request to the URL and save the response as a .gz file.
+Open the .gz file and extract its contents to a .txt file.
+
+Step 2. Parse the File:
+
+Define a function parse_file with parameter filename.
+Read the .txt file into a DataFrame with tab-separated values.
+Convert the #tax_id column to integer type.
+Return the DataFrame.
+Step 3. Write to JSON:
+
+Define a function write_to_json with parameters df and output_filename.
+Convert the DataFrame to JSON format and save it.
+Step 4. Count Protein-Coding Genes per Chromosome:
+
+Define a function count_protein_coding_genes with parameter df.
+Filter the DataFrame for protein-coding genes.
+Count the occurrences of each chromosome.
+Return the counts.
+Step 5. Create Visualization:
+
+Define a function create_visualization with parameter chromosome_counts.
+Create a bar plot with chromosomes on the x-axis and gene counts on the y-axis.
+Set labels, title, and rotate x-axis labels.
+Display the plot.
